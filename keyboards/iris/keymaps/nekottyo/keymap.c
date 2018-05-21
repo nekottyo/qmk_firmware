@@ -27,6 +27,8 @@ enum custom_keycodes {
 #define KC_AE NO_AE
 #define KC_OE NO_OSLH
 
+#define M_PASTE LSFT(KC_INS)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_kc(
@@ -47,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-------+-------+-------+-------+-------+-------.                    ,-------+-------+-------+-------+-------+-------.
      KC_TILD,KC_EXLM,KC_AT  ,KC_HASH,KC_DLR ,KC_PERC,                     KC_CIRC,KC_AMPR,KC_ASTR,KC_SLSH,KC_LPRN,KC_RPRN,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,                     KC_TRNS,KC_TRNS,KC_TRNS,KC_PIPE,KC_LCBR,KC_RCBR,
+     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,                     M_PASTE,KC_TRNS,KC_TRNS,KC_PIPE,KC_LCBR,KC_RCBR,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
      KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_BSLS,                     KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_LBRC,KC_RBRC,
   //|-------+-------+-------+-------+-------+-------+-------.    ,-------|-------+-------+-------+-------+-------+-------|
