@@ -28,6 +28,12 @@ enum custom_keycodes {
 #define KC_OE NO_OSLH
 
 #define M_PASTE LSFT(KC_INS)
+#define M_D KC_MS_DOWN
+#define M_U KC_MS_UP
+#define M_L KC_MS_LEFT
+#define M_R KC_MS_RIGHT
+#define M_B1 KC_MS_BTN1
+#define M_B2 KC_MS_BTN2
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -49,9 +55,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-------+-------+-------+-------+-------+-------.                    ,-------+-------+-------+-------+-------+-------.
      KC_TILD,KC_EXLM,KC_AT  ,KC_HASH,KC_DLR ,KC_PERC,                     KC_CIRC,KC_AMPR,KC_ASTR,KC_SLSH,KC_LPRN,KC_RPRN,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,                     M_PASTE,KC_TRNS,KC_TRNS,KC_PIPE,KC_LCBR,KC_RCBR,
+     KC_TRNS,M_B2   ,M_U    ,M_B1   ,KC_TRNS,KC_TRNS,                     M_PASTE,KC_TRNS,KC_TRNS,KC_PIPE,KC_LCBR,KC_RCBR,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_BSLS,                     KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_LBRC,KC_RBRC,
+     KC_TRNS,M_L    ,M_D    ,M_R    ,KC_TRNS,KC_BSLS,                     KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_LBRC,KC_RBRC,
   //|-------+-------+-------+-------+-------+-------+-------.    ,-------|-------+-------+-------+-------+-------+-------|
      KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
   //`-------+-------+-------+--+----+-------+-------+-------/    \-------+-------+-------+-------+-------+-------+-------'
@@ -65,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
      KC_TRNS,KC_7   ,KC_8   ,KC_9   ,KC_MINS,KC_ASTR,                     KC_UNDS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_PIPE,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     KC_TRNS,KC_4   ,KC_5   ,KC_6   ,KC_PLUS,KC_SLSH,                     KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_TRNS,KC_BSLS,
+     KC_TRNS,KC_4   ,KC_5   ,KC_6   ,KC_PLUS,KC_SLSH,                     KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_COLON,KC_BSLS,
   //|-------+-------+-------+-------+-------+-------+-------.    ,-------|-------+-------+-------+-------+-------+-------|
      KC_TRNS,KC_1   ,KC_2   ,KC_3   ,KC_0   ,KC_EQL ,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
   //`-------+-------+-------+--+----+-------+-------+-------/    \-------+-------+-------+-------+-------+-------+-------'
