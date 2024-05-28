@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
      QK_BOOT,M_B2   ,M_U    ,M_B1   ,M_WHD  ,KC_TRNS,                     M_PASTE,KC_TRNS,KC_TRNS,KC_PIPE,KC_LCBR,KC_RCBR,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     BL_STEP,M_L    ,M_D    ,M_R    ,M_WHU  ,KC_BSLS,                     KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_LBRC,KC_RBRC,
+     KC_TRNS,M_L    ,M_D    ,M_R    ,M_WHU  ,KC_BSLS,                     KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_LBRC,KC_RBRC,
   //|-------+-------+-------+-------+-------+-------+-------.    ,-------|-------+-------+-------+-------+-------+-------|
      KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
   //`-------+-------+-------+--+----+-------+-------+-------/    \-------+-------+-------+-------+-------+-------+-------'
@@ -71,9 +71,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
      RGB_TOG,RGB_HUI,RGB_HUD,KC_EQL ,KC_MINS,KC_ASTR,                     KC_COLON,KC_UNDS,KC_TRNS,KC_TRNS,KC_TRNS,KC_PIPE,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     RGB_MOD,RGB_SAI,RGB_SAD,KC_TRNS,KC_PLUS,KC_SLSH,                     KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_COLON,KC_BSLS,
+     KC_TRNS,RGB_SAI,RGB_SAD,KC_TRNS,KC_PLUS,KC_SLSH,                     KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_COLON,KC_BSLS,
   //|-------+-------+-------+-------+-------+-------+-------.    ,-------|-------+-------+-------+-------+-------+-------|
-     KC_MUTE,RGB_VAI,RGB_VAD,KC_TRNS,KC_TRNS,KC_EQL ,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+     RGB_MOD,RGB_VAI,RGB_VAD,KC_TRNS,KC_TRNS,KC_EQL ,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
   //`-------+-------+-------+--+----+-------+-------+-------/    \-------+-------+-------+-------+-------+-------+-------'
                                    KC_TRNS,KC_NO  ,KC_TRNS,         KC_TRNS,KC_TRNS,KC_TRNS
   //                              `-------+-------+-------'        `-------+-------+-------'
