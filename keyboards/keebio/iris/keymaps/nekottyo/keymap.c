@@ -26,14 +26,14 @@ enum custom_keycodes {
 #define KC_OE NO_OSLH
 
 #define M_PASTE LSFT(KC_INS)
-#define M_D KC_MS_DOWN
-#define M_U KC_MS_UP
-#define M_L KC_MS_LEFT
-#define M_R KC_MS_RIGHT
-#define M_B1 KC_MS_BTN1
-#define M_B2 KC_MS_BTN2
-#define M_WHU KC_WH_U
-#define M_WHD KC_WH_D
+#define M_D MS_DOWN
+#define M_U MS_UP
+#define M_L MS_LEFT
+#define M_R MS_RGHT
+#define M_B1 MS_BTN1
+#define M_B2 MS_BTN2
+#define M_WHU MS_WHLU
+#define M_WHD MS_WHLD
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -69,11 +69,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-------+-------+-------+-------+-------+-------.                    ,-------+-------+-------+-------+-------+-------.
      KC_F12 ,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,                     KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,KC_F11 ,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     RGB_TOG,RGB_HUI,RGB_HUD,KC_EQL ,KC_MINS,KC_ASTR,                     KC_COLON,KC_UNDS,KC_TRNS,KC_TRNS,KC_TRNS,KC_PIPE,
+     RM_TOGG,RM_HUEU,RM_HUED,KC_EQL ,KC_MINS,KC_ASTR,                     KC_COLON,KC_UNDS,KC_TRNS,KC_TRNS,KC_TRNS,KC_PIPE,
   //|-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------|
-     KC_TRNS,RGB_SAI,RGB_SAD,KC_TRNS,KC_PLUS,KC_SLSH,                     KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_COLON,KC_BSLS,
+     KC_TRNS,RM_SATU,RM_SATD,KC_TRNS,KC_PLUS,KC_SLSH,                     KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_COLON,KC_BSLS,
   //|-------+-------+-------+-------+-------+-------+-------.    ,-------|-------+-------+-------+-------+-------+-------|
-     RGB_MOD,RGB_VAI,RGB_VAD,KC_TRNS,KC_TRNS,KC_EQL ,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+     RM_NEXT,RM_VALU,RM_VALD,KC_TRNS,KC_TRNS,KC_EQL ,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,QK_BOOT,KC_TRNS,
   //`-------+-------+-------+--+----+-------+-------+-------/    \-------+-------+-------+-------+-------+-------+-------'
                                    KC_TRNS,KC_NO  ,KC_TRNS,         KC_TRNS,KC_TRNS,KC_TRNS
   //                              `-------+-------+-------'        `-------+-------+-------'
